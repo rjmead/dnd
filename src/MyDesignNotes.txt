@@ -1,1 +1,9 @@
-Starting to take notes on design now that I've made it this far. Going to commit and then start experimenting
+Starting to take notes on design now that I've made it this far. Going to commit and then start experimenting.
+
+- SearchBar feels too large, should split into Container and Presentational components
+- Should I make all the api calls for the search topics on page load or as the topic is selected?
+    - Going to at least call spells on ComponentDidMount()
+    - Need to store an array of names that can be filtered by user input and match full names with urls from objects
+- Future: Add caching or saving to local storage to avoid too many api calls
+
+- Display list of spells in search results and filter based on searchText is working!!

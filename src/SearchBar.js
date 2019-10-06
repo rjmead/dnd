@@ -1,4 +1,5 @@
 import React from 'react'
+import SearchResults from './SearchResults'
 
 class SearchBar extends React.Component{
     constructor() {
@@ -8,11 +9,35 @@ class SearchBar extends React.Component{
             prevSearches: [],
             searchTopic: "",
             isFetching: false,
-            data: {
-                0: "test"
-            }
+            spellData: [{ "name": "Spell Data Incoming" }],
+            equipData: [{ "name": "Equipment Data Incoming" }]
         }
         this.handleSubmit = this.handleSubmit.bind(this)
+    }
+
+    // Make call to api to get data after it's mounted
+    componentDidMount() {
+        // spell data
+        this.setState({isFetching: true})
+        fetch("http://www.dnd5eapi.co/api/spells/")
+            .then(res => res.json())
+            .then(data => {
+                this.setState({
+                    spellData: data.results,
+                    isFetching: false
+                })
+            })
+
+        // equipment data
+        this.setState({isFetching: true})
+        fetch("http://www.dnd5eapi.co/api/equipment/")
+            .then(res => res.json())
+            .then(data => {
+                this.setState({
+                    equipData: data.results,
+                    isFetching: false
+                })
+            })
     }
 
     // example of how using arrow functions in class methods doesn't require binding to call setState()
@@ -25,17 +50,7 @@ class SearchBar extends React.Component{
     // normal class methods require binding in the constructor to call setState()
     handleSubmit(e) {
         e.preventDefault()
-        //
-        this.setState({isFetching: true})
-        fetch("http://www.dnd5eapi.co/api/spells/")
-            .then(res => res.json())
-            .then(data => {
-                this.setState({
-                    data: data.results,
-                    isFetching: false
-                })
-            })
-        //
+
         this.setState((prevState) => {
             // push new search
             prevState.prevSearches.push(this.state.searchText)
@@ -63,15 +78,15 @@ class SearchBar extends React.Component{
                     <option value="spells">Spells</option>
                     <option value="equipment">Equipment</option>
                 </select>
-                <button>Search!</button>
+                <button>Search! (kinda pointless atm)</button>
 
                 <br/>
-                <br/>
-                <br/>
-                {JSON.stringify(this.state.data[0])}
-                <br/>
-                <br/>
-                <br/>
+                {/*Search Results Here:*/}
+                <SearchResults
+                    spellData={this.state.spellData}
+                    equipData={this.state.equipData}
+                    searchText={this.state.searchText}
+                />
 
                 <hr/>
                 <h3>Debug Zone:</h3>
