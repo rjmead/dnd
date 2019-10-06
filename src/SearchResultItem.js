@@ -18,6 +18,7 @@ class SearchResultItem extends React.Component{
                     data: data,
                     show: true
                 })
+                console.log(this.state.data)
             })
     };
 
@@ -30,10 +31,7 @@ class SearchResultItem extends React.Component{
             <li>
                 <b>{this.props.item.name}</b>
                 <button type="button" onClick={this.showModal}>Open Details</button>
-                {/*<a href={this.props.item.url} target="_blank" rel="noopener noreferrer">Link</a>*/}
-                <Modal show={this.state.show} handleClose={this.hideModal}>
-                    {JSON.stringify(this.state.data, null, 2)}
-                </Modal>
+                <Modal show={this.state.show} handleClose={this.hideModal} data={this.state.data} />
             </li>
         )
     }

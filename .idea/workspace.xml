@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7c5e0d2-0cc6-4d86-b3fa-eaf573af341b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SearchResultItem.js" afterDir="false" />
+    <list default="true" id="d7c5e0d2-0cc6-4d86-b3fa-eaf573af341b" name="Default Changelist" comment="Display info in a table in modal. Fixed some css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyDesignNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyDesignNotes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchResults.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchResultItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchResultItem.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570386866095</updated>
-      <workItem from="1570386867195" duration="15271000" />
+      <workItem from="1570386867195" duration="18226000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Version Control in WebStorm. Commented out SearchBox">
       <created>1570388490999</created>
@@ -116,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570397334185</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Get details when button is clicked and display details in a modal">
+      <created>1570402413258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570402413258</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +142,8 @@
     <MESSAGE value="Testing Version Control in WebStorm. Un-commented SearchBox" />
     <MESSAGE value="Added fetch functionality and debug zone in SearchBar. Added logo and moved Header &amp; Footer to their own files. Created file for design notes and brainstorming." />
     <MESSAGE value="Showing list of spells from api call and filtering based on text of search input" />
-    <option name="LAST_COMMIT_MESSAGE" value="Showing list of spells from api call and filtering based on text of search input" />
+    <MESSAGE value="Get details when button is clicked and display details in a modal" />
+    <MESSAGE value="Display info in a table in modal. Fixed some css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display info in a table in modal. Fixed some css" />
   </component>
 </project>
