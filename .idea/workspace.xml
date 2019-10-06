@@ -68,8 +68,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570386866095</updated>
-      <workItem from="1570386867195" duration="1507000" />
+      <workItem from="1570386867195" duration="1652000" />
     </task>
+    <task id="LOCAL-00001" summary="Testing Version Control in WebStorm. Commented out SearchBox">
+      <created>1570388490999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570388490999</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Testing Version Control in WebStorm. Commented out SearchBox" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Version Control in WebStorm. Commented out SearchBox" />
   </component>
 </project>
