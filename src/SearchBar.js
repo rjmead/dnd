@@ -17,6 +17,7 @@ class SearchBar extends React.Component{
 
     // Make call to api to get data after it's mounted
     componentDidMount() {
+        console.log("fetching data from API")
         // spell data
         this.setState({isFetching: true})
         fetch("http://www.dnd5eapi.co/api/spells/")
@@ -74,19 +75,23 @@ class SearchBar extends React.Component{
                     onChange={this.handleChange}
                 />
                 <select name="searchTopic" onChange={this.handleChange} value={this.state.searchTopic}>
-                    <option value="Search Topic">Search Topic</option>
+                    <option value="">Select a Topic</option>
                     <option value="spells">Spells</option>
                     <option value="equipment">Equipment</option>
                 </select>
-                <button>Search! (kinda pointless atm)</button>
 
                 <br/>
                 {/*Search Results Here:*/}
-                <SearchResults
-                    spellData={this.state.spellData}
-                    equipData={this.state.equipData}
-                    searchText={this.state.searchText}
-                />
+                {this.state.searchTopic ?
+                    <SearchResults
+                        spellData={this.state.spellData}
+                        equipData={this.state.equipData}
+                        searchText={this.state.searchText}
+                        searchTopic={this.state.searchTopic}
+                    />
+                :
+                    <p>Only displaying if a search topic is selected above</p>
+                }
 
                 <hr/>
                 <h3>Debug Zone:</h3>

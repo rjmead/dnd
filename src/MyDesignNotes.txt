@@ -7,3 +7,10 @@ Starting to take notes on design now that I've made it this far. Going to commit
 - Future: Add caching or saving to local storage to avoid too many api calls
 
 - Display list of spells in search results and filter based on searchText is working!!
+======
+- show details of spell when clicked
+    - in a popup?
+    - takeover whole page?
+    - accordian under li? (nahhh lol)
+
+- Cleanup how we're storing data, move up to higher components and build array of details as we click on them

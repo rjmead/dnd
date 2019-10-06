@@ -1,24 +1,28 @@
 import React from 'react'
+import SearchResultItem from './SearchResultItem'
 
 function SearchResults(props){
-    //let spells = props.spellData
-    //let equipment = props.equipData
     let search = props.searchText.toLowerCase()
 
-    // filter the spells based on searchText
-    let spells = props.spellData.filter(spell => {
-        return spell.name.toLowerCase().indexOf(search) !== -1 ? spell : null
-    })
+    function buildList(arr){
+        // filter the array based on searchText
+        let items = arr.filter(item => {
+            return item.name.toLowerCase().indexOf(search) !== -1 ? item : null
+        })
 
-    // convert spells into an Array of presentable info
-    let cnvSpells = spells.map(spell => {
-        return <li><b>{spell.name}</b> <a href={spell.url} target="_blank" rel="noopener noreferrer">Link</a></li>
-    })
+        // convert spells into an Array of presentable info
+        return items.map(item => {
+            return <SearchResultItem key={item.url} item={item} />
+        })
+    }
+
+    let cnvSpells = buildList(props.spellData)
+    let cnvEquip = buildList(props.equipData)
 
     return(
         <div>
-            <h1>Search Results:</h1>
-            {cnvSpells}
+            <h1>Search results for {props.searchTopic}:</h1>
+            {props.searchTopic === "spells" ? cnvSpells : cnvEquip}
         </div>
     )
 }
