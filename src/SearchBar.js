@@ -96,6 +96,7 @@ class SearchBar extends React.Component{
                             <li>You must select a topic (searching ALL will be a future feature)</li>
                             <li>Use the search box to filter the results for each topic</li>
                             <li>Click button to view modal window of details for each item</li>
+                            <li><b>Not Working? <a href="http://dnd-api-resource.herokuapp.com">Click Here</a></b></li>
                         </ul>
                     </div>
                 }

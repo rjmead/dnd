@@ -4,10 +4,7 @@ function Footer() {
     return (
         <footer className="App-footer">
             <p>
-                Footer Text Placeholder
-            </p>
-            <p>
-                Dev Note: Edit <code>src/App.js</code> and save to reload.
+                <b>Not Working? <a href="http://dnd-api-resource.herokuapp.com">Click Here</a></b>
             </p>
         </footer>
     )
