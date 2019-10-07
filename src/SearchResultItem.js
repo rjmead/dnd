@@ -29,8 +29,7 @@ class SearchResultItem extends React.Component{
     render(){
         return(
             <li>
-                <b>{this.props.item.name}</b>
-                <button type="button" onClick={this.showModal}>Open Details</button>
+                <button type="button" onClick={this.showModal}>{this.props.item.name}</button>
                 <Modal show={this.state.show} handleClose={this.hideModal} data={this.state.data} />
             </li>
         )

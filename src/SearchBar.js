@@ -67,18 +67,18 @@ class SearchBar extends React.Component{
 
     render() {
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} className="SearchBar">
+                <select name="searchTopic" onChange={this.handleChange} value={this.state.searchTopic}>
+                    <option value="">Select a Topic</option>
+                    <option value="spells">Spells</option>
+                    <option value="equipment">Equipment</option>
+                </select>
                 <input
                     placeholder="Search..."
                     name="searchText"
                     value={this.state.searchText}
                     onChange={this.handleChange}
                 />
-                <select name="searchTopic" onChange={this.handleChange} value={this.state.searchTopic}>
-                    <option value="">Select a Topic</option>
-                    <option value="spells">Spells</option>
-                    <option value="equipment">Equipment</option>
-                </select>
 
                 <br/>
                 {/*Search Results Here:*/}
@@ -90,23 +90,15 @@ class SearchBar extends React.Component{
                         searchTopic={this.state.searchTopic}
                     />
                 :
-                    <p>Only displaying if a search topic is selected above</p>
+                    // Instructions
+                    <div className="instructions">
+                        <ul>
+                            <li>You must select a topic (searching ALL will be a future feature)</li>
+                            <li>Use the search box to filter the results for each topic</li>
+                            <li>Click button to view modal window of details for each item</li>
+                        </ul>
+                    </div>
                 }
-
-                <hr/>
-                <h3>Debug Zone:</h3>
-                {`Search Text: ${this.state.searchText}`}<br/>
-                {`Previous Searches: ${this.state.prevSearches.join(",")}`}<br/>
-                {`Search Topic: ${this.state.searchTopic}`}<br/>
-                {`Fetching?: ${this.state.isFetching}`}<br/>
-                <hr/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <p>end of page</p>
             </form>
         )
     }

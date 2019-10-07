@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 6vmin;
+  padding: 1vmin;
 }
 
 .App-header {
@@ -13,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.5vmin);
   color: white;
 }
 
@@ -75,4 +76,36 @@
 
 .display-none {
   display: none;
+}
+
+.instructions{
+  max-width: 600px;
+  font-size: 13pt;
+  line-height: 30pt;
+  background-color: #f2f2f2;
+  padding: .5em;
+  border-radius: 1em;
+  margin: 2em auto;
+}
+
+.instructions ul{
+  list-style: none;
+}
+
+.SearchBar input, .SearchBar select{
+  font-size: 15pt;
+  margin: 1em;
+}
+
+.SearchResults{
+  max-width: 80%;
+  margin: auto;
+  column-count: 3;
+  list-style: none;
+}
+
+.SearchResults li button{
+  margin-top: 1em;
+  min-width: 50%;
+  font-size: 13pt;
 }

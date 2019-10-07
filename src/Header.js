@@ -5,7 +5,7 @@ function Header() {
     return(
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h3>Welcome to the DnD5e Api Search</h3>
+            <h3>5th Edition API Search</h3>
         </header>
     )
 }

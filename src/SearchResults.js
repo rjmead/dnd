@@ -20,10 +20,9 @@ function SearchResults(props){
     let cnvEquip = buildList(props.equipData)
 
     return(
-        <div>
-            <h1>Search results for {props.searchTopic}:</h1>
+        <ul className="SearchResults">
             {props.searchTopic === "spells" ? cnvSpells : cnvEquip}
-        </div>
+        </ul>
     )
 }
 
