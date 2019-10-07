@@ -81,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570386866095</updated>
-      <workItem from="1570386867195" duration="27979000" />
+      <workItem from="1570386867195" duration="28425000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Version Control in WebStorm. Commented out SearchBox">
       <created>1570388490999</created>
@@ -139,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570414020336</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Trying to resolve mixed content error...">
+      <created>1570415675032</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570415675032</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +172,7 @@
     <MESSAGE value="Display info in a table in modal. Fixed some css" />
     <MESSAGE value="Cleaned up tableRows to serve both spells and equipment" />
     <MESSAGE value="More CSS cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="More CSS cleanup" />
+    <MESSAGE value="Trying to resolve mixed content error..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to resolve mixed content error..." />
   </component>
 </project>
