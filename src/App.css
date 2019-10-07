@@ -45,24 +45,26 @@
   position:fixed;
   background: white;
   width: 80%;
-  height: auto;
+  max-height: 90%;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
+  overflow-y: auto;
 }
 
 .modal-main table{
-  /*border-collapse: collapse;*/
+  border-collapse: collapse;
   width: 100%;
 }
 
-.modal-main td{
-  text-align: left;
+.modal-main tr td{
   padding: .5em 1em;
+  text-align: left;
 }
-.modal-main td:first-child{
-  width: 20%;
-  text-align: right;
+
+.modal-main tr td:first-child{
+  width: 15%;
+  text-align: right !important;
 }
 
 .modal-main tr:nth-child(even) {background-color: #f2f2f2;}
