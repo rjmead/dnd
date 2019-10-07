@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7c5e0d2-0cc6-4d86-b3fa-eaf573af341b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570386866095</updated>
       <workItem from="1570386867195" duration="29042000" />
-      <workItem from="1570416786342" duration="168000" />
+      <workItem from="1570416786342" duration="637000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Version Control in WebStorm. Commented out SearchBox">
       <created>1570388490999</created>
@@ -155,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570416194140</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add links to http version to avoid the mixed content issue">
+      <created>1570417039897</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1570417039897</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +191,7 @@
     <MESSAGE value="More CSS cleanup" />
     <MESSAGE value="Trying to resolve mixed content error..." />
     <MESSAGE value="Undo fix attempt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Undo fix attempt" />
+    <MESSAGE value="Add links to http version to avoid the mixed content issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add links to http version to avoid the mixed content issue" />
   </component>
 </project>

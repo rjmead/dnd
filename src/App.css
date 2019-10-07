@@ -100,12 +100,23 @@
 .SearchResults{
   max-width: 80%;
   margin: auto;
-  column-count: 3;
+  column-count: 1;
   list-style: none;
 }
 
 .SearchResults li button{
   margin-top: 1em;
-  min-width: 50%;
+  min-width: 80%;
   font-size: 13pt;
+}
+
+@media only screen and (min-width: 600px) {
+  .SearchResults{
+    column-count: 2;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .SearchResults{
+    column-count: 3;
+  }
 }
