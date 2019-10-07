@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7c5e0d2-0cc6-4d86-b3fa-eaf573af341b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchResultItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchResultItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchResults.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570386866095</updated>
-      <workItem from="1570386867195" duration="27016000" />
+      <workItem from="1570386867195" duration="27979000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Version Control in WebStorm. Commented out SearchBox">
       <created>1570388490999</created>
@@ -136,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570410031586</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="More CSS cleanup">
+      <created>1570414020336</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570414020336</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +164,7 @@
     <MESSAGE value="Get details when button is clicked and display details in a modal" />
     <MESSAGE value="Display info in a table in modal. Fixed some css" />
     <MESSAGE value="Cleaned up tableRows to serve both spells and equipment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up tableRows to serve both spells and equipment" />
+    <MESSAGE value="More CSS cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="More CSS cleanup" />
   </component>
 </project>
