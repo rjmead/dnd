@@ -1,10 +1,9 @@
 import React from 'react'
-import logo from './dndLogo.png';
 
 function Header() {
     return(
         <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={process.env.PUBLIC_URL + "/dndLogo.png"} className="App-logo" alt="logo" />
             <h3>5th Edition API Search</h3>
         </header>
     )
