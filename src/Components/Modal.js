@@ -28,7 +28,7 @@ function Modal(props) {
                     val = val.join("/")
                     break
                 default:
-                    if (typeof val !== "string") val = <pre>{JSON.stringify(val, undefined, 2)}</pre>
+                    if (typeof val !== "string") val = <p>{JSON.stringify(val, undefined, 2)}</p>
                     break
             }
             tableRows.push(<tr key={key}>
@@ -41,8 +41,8 @@ function Modal(props) {
     return (
         <div className={showHideClassName}>
             <section className="modal-main">
-                <div className="ui message huge">
-                    <div className="ui block header">
+                <div className="ui message large">
+                    <div className="ui block header big">
                         {props.data != null ? props.data.name : null}
                     </div>
                     <p>

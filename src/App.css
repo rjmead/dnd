@@ -1,21 +1,24 @@
 .App {
   text-align: center;
+  background-color: #353535;
+  min-height: 100vh;
 }
 
 .App-logo {
-  height: 6vmin;
+  height: 12vmin;
   padding: 1vmin;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: radial-gradient(circle, whitesmoke, #292929, #353535);
+  /*background-color: #282c34;*/
   /*min-height: 100vh;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 1.5vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -27,8 +30,9 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #282c34;
-  color: white;
+  background-color: whitesmoke;
+  /*background-image: radial-gradient(circle, whitesmoke, #292929, #353535);*/
+  color: black;
   text-align: center;
 }
 
@@ -45,7 +49,7 @@
 .modal-main {
   position:fixed;
   background: white;
-  width: 80%;
+  width: auto;
   max-height: 90%;
   top:50%;
   left:50%;
@@ -53,43 +57,12 @@
   overflow-y: auto;
 }
 
-/*.modal-main table{*/
-/*  border-collapse: collapse;*/
-/*  width: 100%;*/
-/*}*/
-
-/*.modal-main tr td{*/
-/*  padding: .5em 1em;*/
-/*  text-align: left;*/
-/*}*/
-
-/*.modal-main tr td:first-child{*/
-/*  width: 15%;*/
-/*  text-align: right !important;*/
-/*}*/
-
-/*.modal-main tr:nth-child(even) {background-color: #f2f2f2;}*/
-
 .display-block {
   display: block;
 }
 
 .display-none {
   display: none;
-}
-
-.instructions{
-  max-width: 600px;
-  font-size: 13pt;
-  line-height: 30pt;
-  background-color: #f2f2f2;
-  padding: .5em;
-  border-radius: 1em;
-  margin: 2em auto;
-}
-
-.instructions ul{
-  list-style: none;
 }
 
 .SearchBar{
@@ -107,8 +80,16 @@
 
 .SearchResults li{
   margin: .5em;
+
 }
 
 .SearchResults li button{
   min-width: 300px;
+  font-size: 13pt !important;
+  color: white !important;
+  background-color: #950909 !important;
+}
+
+.SearchResults li button:hover{
+  background-color: #d60d0d !important;
 }

@@ -29,7 +29,7 @@ class SearchResultItem extends React.Component{
     render(){
         return(
             <li>
-                <button className="ui grey button" type="button" onClick={this.showModal}>{this.props.item.name}</button>
+                <button className="ui button" type="button" onClick={this.showModal}>{this.props.item.name}</button>
                 <Modal show={this.state.show} handleClose={this.hideModal} data={this.state.data} />
             </li>
         )

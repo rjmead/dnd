@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7c5e0d2-0cc6-4d86-b3fa-eaf573af341b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/logoBlue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logoRed.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dndLogo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SearchResultItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchResultItem.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +38,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -91,7 +96,7 @@
       <updated>1570386866095</updated>
       <workItem from="1570386867195" duration="29042000" />
       <workItem from="1570416786342" duration="730000" />
-      <workItem from="1570925051409" duration="15451000" />
+      <workItem from="1570925051409" duration="19225000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Version Control in WebStorm. Commented out SearchBox">
       <created>1570388490999</created>
@@ -198,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570973798195</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update Modal Layout">
+      <created>1570976070757</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1570976070757</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +230,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Testing Version Control in WebStorm. Commented out SearchBox" />
     <MESSAGE value="Testing Version Control in WebStorm. Un-commented SearchBox" />
     <MESSAGE value="Added fetch functionality and debug zone in SearchBar. Added logo and moved Header &amp; Footer to their own files. Created file for design notes and brainstorming." />
@@ -233,6 +246,7 @@
     <MESSAGE value="Added Semantic UI&#10;Used flex to wrap search results evenly and responsively&#10;Used Semantic to add container and format SearchBar component" />
     <MESSAGE value="Updated info message on homepage" />
     <MESSAGE value="Move Components to /Components&#10;move dndLogo to /public" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move Components to /Components&#10;move dndLogo to /public" />
+    <MESSAGE value="Update Modal Layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Modal Layout" />
   </component>
 </project>
