@@ -92,31 +92,24 @@
   list-style: none;
 }
 
-.SearchBar input, .SearchBar select{
-  font-size: 15pt;
-  margin: 1em;
+.SearchBar{
+  margin-top: 1.5em;
 }
 
 .SearchResults{
-  max-width: 80%;
-  margin: auto;
-  column-count: 1;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-inline-start: 0;
+}
+
+
+.SearchResults li{
+  margin: .5em;
 }
 
 .SearchResults li button{
-  margin-top: 1em;
-  min-width: 80%;
-  font-size: 13pt;
-}
-
-@media only screen and (min-width: 600px) {
-  .SearchResults{
-    column-count: 2;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .SearchResults{
-    column-count: 3;
-  }
+  min-width: 300px;
 }

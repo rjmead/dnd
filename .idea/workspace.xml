@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7c5e0d2-0cc6-4d86-b3fa-eaf573af341b" name="Default Changelist" comment="">
+    <list default="true" id="d7c5e0d2-0cc6-4d86-b3fa-eaf573af341b" name="Default Changelist" comment="Added Semantic UI&#10;Used flex to wrap search results evenly and responsively&#10;Used Semantic to add container and format SearchBar component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchResultItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchResultItem.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +85,8 @@
       <option name="presentableId" value="Default" />
       <updated>1570386866095</updated>
       <workItem from="1570386867195" duration="29042000" />
-      <workItem from="1570416786342" duration="637000" />
+      <workItem from="1570416786342" duration="730000" />
+      <workItem from="1570925051409" duration="10401000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Version Control in WebStorm. Commented out SearchBox">
       <created>1570388490999</created>
@@ -161,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570417039897</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update CSS so buttons are responsive for mobile">
+      <created>1570417488486</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1570417488486</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +203,8 @@
     <MESSAGE value="Trying to resolve mixed content error..." />
     <MESSAGE value="Undo fix attempt" />
     <MESSAGE value="Add links to http version to avoid the mixed content issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add links to http version to avoid the mixed content issue" />
+    <MESSAGE value="Update CSS so buttons are responsive for mobile" />
+    <MESSAGE value="Added Semantic UI&#10;Used flex to wrap search results evenly and responsively&#10;Used Semantic to add container and format SearchBar component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Semantic UI&#10;Used flex to wrap search results evenly and responsively&#10;Used Semantic to add container and format SearchBar component" />
   </component>
 </project>

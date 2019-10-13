@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchResults from './SearchResults'
 
-class SearchBar extends React.Component{
+class SearchBar extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -9,8 +9,8 @@ class SearchBar extends React.Component{
             prevSearches: [],
             searchTopic: "",
             isFetching: false,
-            spellData: [{ "name": "Spell Data Incoming" }],
-            equipData: [{ "name": "Equipment Data Incoming" }]
+            spellData: [{"name": "Spell Data Incoming"}],
+            equipData: [{"name": "Equipment Data Incoming"}]
         }
         this.handleSubmit = this.handleSubmit.bind(this)
     }
@@ -66,21 +66,40 @@ class SearchBar extends React.Component{
     }
 
     render() {
-        return(
-            <form onSubmit={this.handleSubmit} className="SearchBar">
-                <select name="searchTopic" onChange={this.handleChange} value={this.state.searchTopic}>
-                    <option value="">Select a Topic</option>
-                    <option value="spells">Spells</option>
-                    <option value="equipment">Equipment</option>
-                </select>
-                <input
-                    placeholder="Search..."
-                    name="searchText"
-                    value={this.state.searchText}
-                    onChange={this.handleChange}
-                />
-
-                <br/>
+        return (
+            <div className="ui container">
+                <div className="ui two column centered grid">
+                    <form onSubmit={this.handleSubmit} className="SearchBar ui form column">
+                        <div className=" fields">
+                            <div className="seven wide field">
+                                <select
+                                    className="ui dropdown"
+                                    name="searchTopic"
+                                    onChange={this.handleChange}
+                                    value={this.state.searchTopic}
+                                >
+                                    <option value="">Select a Topic</option>
+                                    <option value="spells">Spells</option>
+                                    <option value="equipment">Equipment</option>
+                                </select>
+                            </div>
+                            <div className="nine wide field">
+                                <div className="ui icon input">
+                                    <input
+                                        type="text"
+                                        placeholder="Search..."
+                                        name="searchText"
+                                        value={this.state.searchText}
+                                        onChange={this.handleChange}
+                                    />
+                                    <i className="search icon"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                {/* Divider needs a space to resolve lint warning */}
+                <div className="ui divider">&nbsp;</div>
                 {/*Search Results Here:*/}
                 {this.state.searchTopic ?
                     <SearchResults
@@ -89,18 +108,19 @@ class SearchBar extends React.Component{
                         searchText={this.state.searchText}
                         searchTopic={this.state.searchTopic}
                     />
-                :
+                    :
                     // Instructions
                     <div className="instructions">
                         <ul>
                             <li>You must select a topic (searching ALL will be a future feature)</li>
                             <li>Use the search box to filter the results for each topic</li>
                             <li>Click button to view modal window of details for each item</li>
-                            <li><b>Not Working? <a href="http://dnd-api-resource.herokuapp.com">Click Here</a></b></li>
+                            <li><b>Not Working? <a href="http://dnd-api-resource.herokuapp.com">Click Here</a></b>
+                            </li>
                         </ul>
                     </div>
                 }
-            </form>
+            </div>
         )
     }
 }
