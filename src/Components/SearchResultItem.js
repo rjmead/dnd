@@ -1,5 +1,6 @@
 import React from 'react'
 import Modal from './Modal'
+import baseURL from '../../src/Constants'
 
 class SearchResultItem extends React.Component{
     constructor() {
@@ -11,7 +12,7 @@ class SearchResultItem extends React.Component{
     }
 
     showModal = () => {
-        fetch(this.props.item.url)
+        fetch(`${baseURL}${this.props.item.url}`)
             .then(res => res.json())
             .then(data => {
                 this.setState({

@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchResults from './SearchResults'
+import baseURL from '../Constants'
 
 class SearchBar extends React.Component {
     constructor() {
@@ -10,7 +11,7 @@ class SearchBar extends React.Component {
             searchTopic: "",
             isFetching: false,
             spellData: [{"name": "Spell Data Incoming"}],
-            equipData: [{"name": "Equipment Data Incoming"}]
+            equipData: [{"name": "Equipment Data Incoming"}],
         }
         this.handleSubmit = this.handleSubmit.bind(this)
     }
@@ -20,7 +21,7 @@ class SearchBar extends React.Component {
         console.log("fetching data from API")
         // spell data
         this.setState({isFetching: true})
-        fetch("http://www.dnd5eapi.co/api/spells/")
+        fetch(`${baseURL}/api/spells`)
             .then(res => res.json())
             .then(data => {
                 this.setState({
@@ -31,7 +32,7 @@ class SearchBar extends React.Component {
 
         // equipment data
         this.setState({isFetching: true})
-        fetch("http://www.dnd5eapi.co/api/equipment/")
+        fetch(`${baseURL}/api/equipment`)
             .then(res => res.json())
             .then(data => {
                 this.setState({
