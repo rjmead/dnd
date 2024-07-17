@@ -1,3 +1,3 @@
-const baseURL = "http://www.dnd5eapi.co"
+const baseURL = "https://www.dnd5eapi.co"
 
 export default baseURL
